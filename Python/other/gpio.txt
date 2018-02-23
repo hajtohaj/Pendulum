@@ -1,0 +1,9 @@
+#P9 pin 12
+echo 60 > /sys/class/gpio/export
+cd /sys/class/gpio/gpio60/
+cat direction
+echo high > /sys/class/gpio/gpio60/direction
+cat direction
+cat value
+echo 0 > value
+cat value

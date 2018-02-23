@@ -1,0 +1,196 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF Arm Transform {
+	translation	0 1.2 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    diffuseColor	0.0223017 0.8 0.139417
+			    }
+
+		    }
+
+		    geometry	Cylinder {
+			    height	0.2
+			    radius	0.1
+			    side	TRUE
+			    top	TRUE
+		    }
+
+	    }
+
+	    DEF Pendulum Transform {
+		    translation	0.6 0 0
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+					}
+
+				}
+
+				geometry	Box {
+					size	1.2 0.01 0.01
+				}
+
+			}
+
+			Transform {
+				translation	-1.07288e-006 7.15256e-007 5.73695e-007
+				rotation	0 0 1  1.5708
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.0159865 0.8 0.0339274
+						    }
+
+					    }
+
+					    geometry	Cylinder {
+						    height	1.2
+						    radius	0.03
+					    }
+
+				    }
+
+				    Transform {
+					    translation	0 -0.6 0
+					    children Shape {
+						    appearance	Appearance {
+							    material	Material {
+								    ambientIntensity	0.2
+								    diffuseColor	0.00283718 0.8 0.0691615
+							    }
+
+						    }
+
+						    geometry	Cylinder {
+							    height	0.08
+							    radius	0.07
+						    }
+
+					    }
+				    }
+				]
+			}
+
+			Transform {
+				translation	0.61 -0.45 0
+				scale	1 0.44 1
+				children [ 
+				    Shape {
+					    appearance	Appearance {
+						    material	Material {
+							    diffuseColor	0.0298791 0.8 0.737562
+						    }
+
+					    }
+
+					    geometry	Cylinder {
+						    radius	0.02
+					    }
+
+				    }
+
+				    Transform {
+					    translation	0 -0.89 0
+					    scale	1 0.06 1
+					    children Shape {
+						    appearance	Appearance {
+							    material	Material {
+								    diffuseColor	0.8 0.0102278 0.104014
+							    }
+
+						    }
+
+						    geometry	Cylinder {
+							    height	4
+							    radius	0.03
+						    }
+
+					    }
+				    }
+				]
+			}
+		    ]
+	    }
+
+	    Transform {
+		    translation	1.24 0 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    diffuseColor	0.0452621 0.8 0.156628
+				    }
+
+			    }
+
+			    geometry	Sphere {
+				    radius	0.04
+			    }
+
+		    }
+	    }
+	]
+}
+Transform {
+	translation	0 -1 0
+	children [ 
+	    Shape {
+		    appearance	Appearance {
+			    material	Material {
+				    diffuseColor	0.0095531 0.118768 0.8
+			    }
+
+		    }
+
+		    geometry	Box {
+			    size	4 0.2 3
+		    }
+
+	    }
+
+	    Transform {
+		    translation	0 1.1 0
+		    scale	0.2 1 0.2
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    diffuseColor	0.0135859 0.0102278 0.8
+				    }
+
+				    texture	NULL
+			    }
+
+			    geometry	Box {
+				    size	2 2 2
+			    }
+
+		    }
+	    }
+
+	    Transform {
+		    translation	0 2.3 0
+		    children Shape {
+			    appearance	Appearance {
+				    material	Material {
+					    diffuseColor	0.0452621 0.8 0.156628
+				    }
+
+			    }
+
+			    geometry	Sphere {
+				    radius	0.05
+			    }
+
+		    }
+	    }
+	]
+}

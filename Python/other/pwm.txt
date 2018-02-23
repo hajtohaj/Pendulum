@@ -1,0 +1,7 @@
+cat /sys/devices/bone_capemgr.9/slots
+echo am33xx_pwm >  /sys/devices/bone_capemgr.9/slots
+cat /sys/devices/bone_capemgr.9/slots
+cd /lib/firmware/
+ll bone_pwm_P*
+echo bone_pwm_P8_36 >  /sys/devices/bone_capemgr.9/slots
+cat /sys/devices/bone_capemgr.9/slots

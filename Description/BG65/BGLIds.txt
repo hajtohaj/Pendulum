@@ -1,0 +1,8 @@
+Motor	DAQ	Color		Description  
+IN0	DIO0	yellow		Digital input 0
+IN1	DIO1	blue		Digital input 1
+IN2	DIO2	brown		Digital input 2
+IN3	VOUT0	pink		Analog input 0 (0..+10V)
+IN4	VOUT2	violet		Analog input 0 (0..+10V)
+OUT1	DIO3	orange		Digital output 1
+OUT2	DIO4	white		Digital output 2
